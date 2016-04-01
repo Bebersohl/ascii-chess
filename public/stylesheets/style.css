@@ -1,0 +1,34 @@
+
+h1,h2,h3,h4,h5,h6,p,input[type="text"],input[type="submit"], textarea {
+	font-family: "Courier New", Helvetica, Arial, sans-serif;
+}
+.center {
+    width: 50%;
+    margin: 0 auto; 
+}
+.center-text {
+	text-align: center;
+}
+
+.vertical-center {
+  min-height: 60%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 60vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+.chess-container textarea{
+	cursor: default !important;
+	resize: none;
+	height: 350px;
+	width: 100%;
+	padding: 50px;
+	font-size: 1.1em;
+	overflow: hidden;
+	text-align: center;
+    
+}
+
+.form-container form{
+	padding-top: 25px;
+}

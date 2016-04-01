@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1.center-text <strong>ascii-chess.com</strong>
+  div.container.vertical-center
+    div.col-md-6.col-md-offset-3.col-xs-12.col-sm-8
+      div.chess-container
+        textarea.form-control(disabled) #{game}
+      div.form-container
+        form
+          div.input-group
+            input.form-control(type="text" placeholder="enter username...")
+            div.input-group-btn
+              input.btn.btn-primary(type="submit" value="play")
+
+
