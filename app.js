@@ -43,7 +43,8 @@ io.on('connection', function(socket){
     }else{
       io.to(games[dc.game].room).emit('game over', {winner: 'd/c', winningId: 'd/c'});
       //remove game from games
-      //games.splice(dc.game, 1);
+      games[dc.game].timer.stop();
+      games.splice(dc.game, 1);
     }
   });
   socket.on('new move', function(state){
