@@ -2,18 +2,15 @@
 h1,h2,h3,h4,h5,h6,p,input[type="text"],input[type="submit"], textarea {
 	font-family: "Courier New", Helvetica, Arial, sans-serif;
 }
-.center {
-    width: 50%;
-    margin: 0 auto; 
-}
-.center-text {
-	text-align: center;
+
+p{
+	margin: 0px 0px 0px 0px;
+	word-wrap:break-word;
 }
 
 .vertical-center {
   min-height: 60%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 60vh; /* These two lines are counted as one :-)       */
-
   display: flex;
   align-items: center;
 }
@@ -26,9 +23,42 @@ h1,h2,h3,h4,h5,h6,p,input[type="text"],input[type="submit"], textarea {
 	font-size: 1.1em;
 	overflow: hidden;
 	text-align: center;
-    
 }
 
 .form-container form{
 	padding-top: 25px;
+	text-align: center;
+}
+
+#moves {
+	padding-top: 25px;
+	word-wrap:break-word;
+}
+
+@media screen and (max-width: 400px) {
+    .chess-container textarea{
+        font-size: .88em;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .chess-container textarea{
+        font-size: .88em;
+        height: 275px;
+    }
+    p{
+    	font-size: .88em;
+    }
+}
+@media screen and (max-width: 335px) {
+    .chess-container textarea{
+        font-size: .74em;
+        height: 250px;
+    }
+    h1{
+    	font-size: 2em;
+    }
+    p{
+    	font-size: .74em;
+    }
 }

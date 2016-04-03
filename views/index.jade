@@ -1,16 +1,31 @@
 extends layout
 
 block content
-  h1.center-text <strong>ascii-chess.com</strong>
+  h1.text-center <strong>ascii-chess.com</strong>
   div.container.vertical-center
-    div.col-md-6.col-md-offset-3.col-xs-12.col-sm-8
-      div.chess-container
-        textarea.form-control(disabled) #{game}
-      div.form-container
-        form
-          div.input-group
-            input.form-control(type="text" placeholder="enter username...")
-            div.input-group-btn
-              input.btn.btn-primary(type="submit" value="play")
+    div.col-md-6.col-md-offset-3.col-xs-12
+      div.row
+        div.col-xs-4
+          p#player2
+        div.col-xs-4.text-center
+          p#status
+        div.col-xs-4.text-right
+          p#p1time
+      div.row
+        div.chess-container
+          textarea.form-control(id="user-ta" disabled) #{game}
+      div.row
+        div.col-xs-6
+          p#player1
+        div.col-xs-6.text-right
+          p#p2time
+      div.row
+        div.form-container
+          form(action="")
+            div.input-group
+              input.form-control(type="text"  autocomplete="off" autofocus placeholder="enter username..." required maxlength="15" id="user-in")
+              div.input-group-btn
+                input.btn.btn-primary(type="submit" value="play" id="user-btn")
+            p#moves
 
 
