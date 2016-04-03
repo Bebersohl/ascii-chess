@@ -109,25 +109,25 @@ var loadingStop = function(){
 var loadingStart = function(){
   var frames = [
   "\n"+
-  "Waiting for opponent\n" +
+  "waiting for opponent\n" +
   "╔════╤╤╤╤════╗\n" +
   "║    │││ \\   ║\n" +
   "║    │││  O  ║\n" +
   "║    OOO     ║",
 "\n"+
-  "Waiting for opponent\n" +
+  "waiting for opponent\n" +
   "╔════╤╤╤╤════╗\n" +
   "║    ││││    ║\n" +
   "║    ││││    ║\n" +
   "║    OOOO    ║",
 "\n"+
-  "Waiting for opponent\n" +
+  "waiting for opponent\n" +
   "╔════╤╤╤╤════╗\n" +
   "║   / │││    ║\n" +
   "║  O  │││    ║\n" +
   "║     OOO    ║",
 "\n"+
-  "Waiting for opponent\n" +
+  "waiting for opponent\n" +
   "╔════╤╤╤╤════╗\n" +
   "║    ││││    ║\n" +
   "║    ││││    ║\n" +
