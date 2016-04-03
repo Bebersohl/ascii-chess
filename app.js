@@ -73,6 +73,9 @@ io.on('connection', function(socket){
           //check for draw
           if(games[index].game.in_draw()){
             winner = "draw";
+          }else if(games[index].game.in_stalemate()){
+          //check for stalemate
+            winner = "stalemate";
           }else if(waitingPlayer === 0){
             winner = "white";
             winningId = games[index].players[currentPlayer].socketId;

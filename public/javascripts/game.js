@@ -71,6 +71,8 @@ socket.on('game over', function(state){
   else if(state.winner === 'draw'){
     //draw
     $userTA.text('game over: draw\nplay again!');
+  }else if(state.winner === 'stalemate'){
+    $userTA.text('game over: stalemate\nplay again!');
   }else{
     //not draw
     if(this.id === state.winningId){
