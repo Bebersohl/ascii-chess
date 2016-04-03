@@ -60,9 +60,14 @@ io.on('connection', function(socket){
       //get possible moves
       var possibleMoves = games[index].game.moves();
       //validate move
-      if(possibleMoves.indexOf(state.move) > -1){
+      if(possibleMoves.indexOf(state.move) > -1 || state.move === 'random' || state.move === 'Random'){
         //make move
-        games[index].game.move(state.move);
+        if(state.move === 'random' || state.move === 'Random'){
+          //random move
+          games[index].game.move(possibleMoves[Math.floor(Math.random() * possibleMoves.length)]);
+        }else{
+          games[index].game.move(state.move);
+        }
         //reset timer
         games[index].timer.reset(60000);
         games[index].timer.start();

@@ -28,7 +28,7 @@ socket.on('game start', function(state){
 });
 
 socket.on('your turn', function(moves){
-  $("#moves").text("moves: " + moves);
+  $moves.text("moves: " + moves + ',random');
 });
 socket.on('tick', function(time){
   $p1time.text(Math.ceil(time / 1000) + 's');
@@ -95,7 +95,6 @@ $('form').on('submit', function(e){
   }else{
     //in game
     socket.emit('new move', {move: $userIN.val(), room: room});
-    console.log('move');
   }
   $userIN.val('');
 });
