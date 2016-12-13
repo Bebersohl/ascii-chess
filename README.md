@@ -15,3 +15,7 @@ ascii-chess is an attempt to make a real-time multi player gaming server using t
 * Socket.io server to make real time gaming possible
 * Jade to easily render HTML templates
 
+##Usage
+
+1. npm install
+2. npm start
