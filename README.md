@@ -1,5 +1,7 @@
 # ascii-chess
 
+![ascii_chess2](https://cloud.githubusercontent.com/assets/7233925/23529568/bb849598-ff63-11e6-8db6-a7b10bf3524d.png)
+
 ascii-chess is an attempt to make a real-time multi player gaming server using the following technologies:
 
 ##Client side
